@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
+
 import CustomLink from '../../custom/CustomLink';
 import auth from '../../firebase.init';
 import './Header.css'
@@ -23,8 +24,8 @@ const Header = () => {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ms-auto">
-        <CustomLink to='/home'>Home</CustomLink>
 
+        <CustomLink to='/home' >Home</CustomLink>
         <CustomLink to='/inven'> Inventories</CustomLink>
 
         {

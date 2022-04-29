@@ -8,6 +8,7 @@ import { faEnvelope, faLock,   } from '@fortawesome/free-solid-svg-icons';
 import './Login.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../loading/Loading';
 
 const Login = () => {
     const [email,setemail]=useState([]);
@@ -42,6 +43,9 @@ const Login = () => {
         event.preventDefault()
         signInWithEmailAndPassword(email, password)
     }
+    if(loading){
+        return <Loading></Loading>
+    }
     
 
     if(user ||user1){
@@ -67,16 +71,10 @@ const Login = () => {
 
 
                </div>
-               {
-                   loading? "Loading......": ''
-               }
+               
                {
                    error?  <p className='text-danger'>Not found</p>:''
                }
-
-   
-      
-    
                
                <br /><br />
                <input className='submit-css' type="submit" value='Login' />

@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import './singup.css';
+import Loading from '../loading/Loading';
 
 const SingUp = () => {
     const [email,setemail]=useState([]);
@@ -19,7 +20,7 @@ const SingUp = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
 
       const [signInWithGoogle,user1] = useSignInWithGoogle(auth);
 
@@ -54,6 +55,9 @@ const SingUp = () => {
         createUserWithEmailAndPassword(email, password)
 
 
+    }
+    if(loading){
+        return <Loading></Loading>
     }
     if(user || user1){
         
