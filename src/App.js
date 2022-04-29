@@ -11,6 +11,7 @@ import MyItems from './components/Items/MyItems';
 import Requeir from './components/Requeir/Requeir';
 import Inventories from './components/inventori/Inventories'
 import Error from './components/404Error/Error';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Route path='/menage' element={<ManageItems></ManageItems>}></Route>
         <Route path='*' element={<Error></Error>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.footer-css{
+
+    display: flex;
+    height: 200px;
+    background-color: black;
+    padding: 10px;
+}
+.text-div{
+    padding: 30px;
+    margin-right: auto;
+
+
+}
+.text-div h2,h3,h5{
+    font-family: 'Times New Roman', Times, serif;
+}
