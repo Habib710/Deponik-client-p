@@ -15,3 +15,11 @@ nav a{
    
     font-weight: 600;
 }
+.btn-singout{
+    background-color: rgb(248, 82, 193);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 19px;
+    border: none;
+    border-radius: 15px;
+}
