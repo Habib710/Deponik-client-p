@@ -2,3 +2,10 @@
    
     max-width: 600px;
 }
+.singup-custom-div{
+    background:linear-gradient(rgba(7, 7, 7, 0.596),rgba(3, 3, 3, 0.822)), url('../../img//55.jpg');
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

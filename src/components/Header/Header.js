@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+
+import CustomLink from '../../custom/CustomLink';
 import './Header.css'
 
 const Header = () => {
@@ -12,12 +13,12 @@ const Header = () => {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ms-auto">
-        <Link to='/home'>Home</Link>
-        <Link to='/inven'> Inventories</Link>
-        <Link to='/manageitems'>Manage Items</Link>
-        <Link to='/blog'>Blog</Link>
-        <Link to='/login' >Login</Link>
-        <Link to='/singup' >SingUp</Link>
+        <CustomLink to='/home'>Home</CustomLink>
+        <CustomLink to='/inven'> Inventories</CustomLink>
+        <CustomLink to='/manageitems'>Manage Items</CustomLink>
+        <CustomLink to='/blog'>Blog</CustomLink>
+        <CustomLink to='/login' >Login</CustomLink>
+        <CustomLink to='/singup' >SingUp</CustomLink>
         
       </Nav>
     </Navbar.Collapse>

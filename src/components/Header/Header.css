@@ -10,7 +10,8 @@ nav a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin-right: 25px;
-    font-size: 22px;
+    font-size: 23px;
+    font-family: 'Times New Roman';
    
-    font-weight: 400;
+    font-weight: 600;
 }
