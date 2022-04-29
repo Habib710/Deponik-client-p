@@ -1,23 +1,30 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faLock, faPen, faPenClip, faPenNib } from '@fortawesome/free-solid-svg-icons';
 import './Login.css';
 
 const Login = () => {
     return (
-        <div className=''>
+        <div className='login-main-div py-5 px-2'>
             <div className=' container  form-custom-css'>
             
             <Form className='form-input-css'>
             <h3>Login</h3>
                 <div className='input-css'>
- 
-               <input type="email" placeholder='Your Email'/>
-               <input type="password" placeholder='Your Password'/>
+                <span className='d-flex align-items-center  justify-content '><FontAwesomeIcon className='mt-4 me-2' icon={faEnvelope} /> 
+                 <input type="email" placeholder=' Your Email'/></span>
+                 <span className='d-flex align-items-center  justify-content '><FontAwesomeIcon className='mt-4 me-2' icon={faLock} /> 
+               <input type="password"  placeholder=' Your Password'/></span>
                </div>
                <br /><br />
                <input className='submit-css' type="submit" value='Login' />
                <br />
                <br />
+               <p>New To DepoNic ? <Link to='/singup'>Sing Up Now </Link></p>
+               <p>Forget password ? <button className='btn text-primary'> Reset password</button> </p>
+              
                OR
                <br />
                <br />

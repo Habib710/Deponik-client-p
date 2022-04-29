@@ -1,21 +1,29 @@
 .form-custom-css{
     max-width:380px;
+    background: rgb(255, 255, 255);
  
     text-align: center;
     
     padding-top: 50px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    margin-top: 70px;
    
    
-   
+}
+.login-main-div{
+    padding: 0;
+    background:linear-gradient(rgba(41, 41, 41, 0.527),rgba(15, 12, 12, 0.801)), url('../../img/istockphoto-1299083810-170667a.jpg');
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .form-input-css{
     width: 100%;
     padding: 8px;
     padding-bottom: 25px;
    
+
     
     
 }
@@ -28,7 +36,7 @@
    outline: none;
 }
 .submit-css{
-    background-color: rgb(252, 73, 183);
+    background-color: rgb(252, 73, 198);
     border: none;
     border-radius: 10px;
     width: 100%;
@@ -38,11 +46,11 @@
     font-weight: 500;
 }
 .google-css{
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(214, 209, 209);
     border: none;
     border-radius: 10px;
     width: 100%;
     font-size: 16px;
-    padding: 5px;
+    padding: 8px;
 
 }
