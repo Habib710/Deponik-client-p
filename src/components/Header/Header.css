@@ -1,0 +1,16 @@
+.costum-css-nav{
+    background-color: rgb(68, 68, 73);
+    min-height: 75px;
+}
+.ittle{
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 25px;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
