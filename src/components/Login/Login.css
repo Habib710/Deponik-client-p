@@ -47,8 +47,10 @@
     font-weight: 500;
 }
 .google-css{
-    background-color: rgb(214, 209, 209);
+    background-color: rgb(228, 186, 215);
     border: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
     border-radius: 10px;
     width: 100%;
     font-size: 16px;

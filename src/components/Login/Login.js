@@ -2,14 +2,17 @@ import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { faEnvelope, faLock,   } from '@fortawesome/free-solid-svg-icons';
 import './Login.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const [email,setemail]=useState([]);
     const [password,setpassword]=useState([]);
+   
     const navigate=useNavigate();
 
     const [
@@ -18,6 +21,13 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
+
+      const [signInWithGoogle,user1] = useSignInWithGoogle(auth);
+
+      const [sendPasswordResetEmail] = useSendPasswordResetEmail(
+        auth
+      );
+     
 
     const emailhendle=event=>{
         setemail(event.target.value);
@@ -32,10 +42,13 @@ const Login = () => {
         event.preventDefault()
         signInWithEmailAndPassword(email, password)
     }
-    if(user){
+    
+
+    if(user ||user1){
         
-        navigate('/blog')
+        navigate('/inven')
     }
+
     return (
         <div className='login-main-div py-5 px-2'>
             <div className=' container  form-custom-css'>
@@ -54,17 +67,31 @@ const Login = () => {
 
 
                </div>
+               {
+                   loading? "Loading......": ''
+               }
+               {
+                   error?  <p className='text-danger'>Not found</p>:''
+               }
+
+   
+      
+    
+               
                <br /><br />
                <input className='submit-css' type="submit" value='Login' />
                <br />
                <br />
                <p>New To DepoNic ? <Link to='/singup'>Sing Up Now </Link></p>
-               <p>Forget password ? <button className='btn text-primary'> Reset password</button> </p>
+               <p>Forget password ? <button onClick={async () => {
+          await sendPasswordResetEmail(email);
+          toast("Email sending");}} className='btn text-primary'> Reset password</button> </p>
+          <ToastContainer />
               
                OR
                <br />
-               <br />
-               <button className='google-css'>Sing in With Google</button>
+              
+               <button onClick={()=>signInWithGoogle()} className='google-css'>Sing in With Google</button>
                
            </Form>
         </div>
