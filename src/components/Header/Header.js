@@ -20,7 +20,7 @@ const Header = () => {
         <div>
      <Navbar className='costum-css-nav'  variant='dark' expand="lg">
   <Container>
-    <Navbar.Brand className='ittle'>DEPONIC</Navbar.Brand>
+    <Navbar.Brand className='ittle'>DEPO<span className='deponic'>NIC</span></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ms-auto">
