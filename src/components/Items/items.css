@@ -1,7 +1,7 @@
 .cart-css{
    padding: 8px;
    border-radius: 10px;
-   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   
 }
 .cart-css img{
@@ -10,4 +10,19 @@
 }
 .text-css{
     min-height:200px; 
+}
+.details-css{
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: rgb(238, 54, 183);
+    padding: 5px 20px;
+}
+.details-css:hover{
+background-color: black;
+transition: .4s ease-in;
+transform: scale(1.07);
+
 }

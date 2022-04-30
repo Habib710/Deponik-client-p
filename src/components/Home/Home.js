@@ -3,6 +3,9 @@ import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import HomeItems from '../Items/HomeItems';
 import './Home.css';
+import img1 from '../../img/cargo.jpg';
+import img2 from '../../img/list.jpg';
+import img3 from '../../img/saifty.jpg';
 
 const Home = () => {
     const [Items,setitems]=useState([]);
@@ -45,11 +48,34 @@ const Home = () => {
     </Carousel.Caption>
     </Carousel.Item>
   </Carousel>
-   <div className='home-cart-css container py-5 my-5'>
+  <h2 className='text-center mt-5'> Inventories Items</h2>
+   <div className='home-cart-css container py-5  px-1'>
+       
 {
-    Items.map(item=><HomeItems key={item.id} data={item}></HomeItems>)
+    Items.slice(0,6).map(item=><HomeItems key={item.id} data={item}></HomeItems>)
 }
 
+   </div>
+   <div className='my-5'>
+       <h2 className='text-center'> DEPO<span className='deponic'>NIC</span>        Services</h2>
+       <div className='container service-main py-5 mt-4'>
+           <div className='service-div text-center'>
+               <img width='100%' src={img1} alt="img" />
+               <h2 className='py-3'> Transpoart</h2>
+               <p> Nobis dignissimos eius voluptatum, dolores dolorem non sunt repellat voluptatibus doloribus laboriosam adipisci, blanditiis labore molestiae quia.</p>
+           </div>
+           <div className='service-div text-center'>
+               <img width='100%' src={img2} alt="img" />
+               <h2 className='py-3'> Management</h2>
+               <p>Manage sit amet consectetur, adipisicing elit. Illum explicabo, optio temporibus, ex error quam suscipit sapiente, cumque ducimus enim ipsum? Sit quia quidem dicta nam non debitis, .</p>
+           </div>
+           <div className='service-div text-center'>
+               <img width='100%' src={img3} alt="img" />
+               <h2 className='py-3'> Careness</h2>
+               <p>  Aspernatur eveniet, ipsa quia modi cum impedit neque illo atque molestias, ipsum nisi tempora repellat non voluptates quos eos maxime. </p>
+           </div>
+
+       </div>
    </div>
           
         </div>
