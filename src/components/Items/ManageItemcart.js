@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ManageItemcart = (props) => {
-    const{id,name,pic,quantity,price}=props.data;
+    const{_id,name,pic,quantity,price}=props.data;
     return (
         <div className='text-center'>
             <div className='manage-cart row'>

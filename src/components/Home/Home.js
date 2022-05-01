@@ -20,7 +20,7 @@ const Home = () => {
     const [Items,
         setitems] = useState([]);
     useEffect(() => {
-        fetch("data.json")
+        fetch("http://localhost:5000/items")
             .then(res => res.json())
             .then(data => setitems(data))
 
@@ -94,7 +94,7 @@ const Home = () => {
                 {Items
                     .slice(0, 6)
                     .map(item =>< HomeItems key = {
-                        item.id
+                        item._id
                     }
                     data = {
                         item

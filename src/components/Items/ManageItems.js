@@ -9,7 +9,7 @@ const ManageItems = () => {
     const [Items,
         setitems] = useState([]);
     useEffect(() => {
-        fetch("data.json")
+        fetch("http://localhost:5000/items")
             .then(res => res.json())
             .then(data => setitems(data))
 
@@ -26,7 +26,7 @@ const ManageItems = () => {
 
             <div className=''>
                 {
-                    Items.map(item=><ManageItemcart key={item.id} data={item}></ManageItemcart>)
+                    Items.map(item=><ManageItemcart key={item._id} data={item}></ManageItemcart>)
   
                 }
             </div>
