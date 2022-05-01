@@ -1,9 +1,10 @@
 .footer-css{
 
-    display: flex;
-    height: 200px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    min-height: 200px;
     background-color: black;
-    padding: 10px;
+ ;
 }
 .text-div{
     padding: 30px;
