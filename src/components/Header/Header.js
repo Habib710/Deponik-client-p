@@ -32,6 +32,9 @@ const Header = () => {
           user?<CustomLink to='/manageitems'>Manage Items</CustomLink>:''
         }
         {
+          user?<CustomLink to='/addnew'>Add Item</CustomLink>:''
+        }
+        {
           user?<CustomLink to='/myitems'>My Items</CustomLink>:''
         }
         <CustomLink to='/blog'>Blog</CustomLink>

@@ -26,3 +26,60 @@ transition: .4s ease-in;
 transform: scale(1.07);
 
 }
+.manage-cart{
+    
+    border: 1px solid rgb(0, 0, 0);
+    
+}
+.manage-img img{
+    padding-top: 15px;
+   
+    width: 180px;
+    height: 120px;
+   
+}
+.manage-ditel-div{
+    border: 1px solid rgb(0, 0, 0);
+}
+.btn-delete{
+    border: none;
+    background-color:rgb(255, 68, 171) ;
+    color: rgb(255, 255, 255);
+   border-radius: 5px;
+   padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.btn-delete:hover{
+    background-color: rgb(245, 2, 2);
+    transition: .5s ease-in;
+    transform: scale(1.2) ;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    .manage-img img{
+        padding-top: 30px;
+   
+        width: 180px;
+        height: 160px;
+       
+    }
+    .manage-ditel-div{
+        border: none;
+    }
+    
+
+    
+}

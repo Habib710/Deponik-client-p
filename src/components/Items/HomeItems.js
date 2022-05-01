@@ -1,10 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './items.css';
+import {  faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 const HomeItems = (props) => {
 
-    const {id,name,pic,price,about,quantity}=props.data;
+    const {id,name,pic,price,about,quantity,spname}=props.data;
     
     return (
         <div>
@@ -15,13 +17,16 @@ const HomeItems = (props) => {
 
             <h4>{name}</h4>
             <h5>Price: {price}</h5>
+            <h5>Supplier: {spname}</h5>
             <p>{about}</p>
+            
 
             </div>
+            
             <div className='p-3'>
-                <h4>In Stock : {quantity}</h4>
+                <h4>Quantity : {quantity}</h4>
                 <Link to='/inven'>
-                <button className='details-css'>Details</button>
+                <button className='details-css'>Stock update <FontAwesomeIcon icon={faArrowRight}/></button>
                 
                 </Link>
             

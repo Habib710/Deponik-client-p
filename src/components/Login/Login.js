@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
@@ -11,10 +11,14 @@ import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../loading/Loading';
 
 const Login = () => {
+    let location = useLocation()
+    let from = location.state?.from?.pathname || "/";
+    const navigate=useNavigate();
+
     const [email,setemail]=useState([]);
     const [password,setpassword]=useState([]);
    
-    const navigate=useNavigate();
+   
 
     const [
         signInWithEmailAndPassword,
@@ -50,7 +54,7 @@ const Login = () => {
 
     if(user ||user1){
         
-        navigate('/inven')
+        navigate(from, { replace: true });
     }
 
     return (

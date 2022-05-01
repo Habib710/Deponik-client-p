@@ -7,8 +7,8 @@ import img1 from '../../img/cargo.jpg';
 import img2 from '../../img/list.jpg';
 import img3 from '../../img/saifty.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleUp, faBuilding,  } from '@fortawesome/free-solid-svg-icons';
-import { faClock,faUser,} from '@fortawesome/free-regular-svg-icons';
+import {  faArrowRight, faBuilding, faEarth, faUsers,  } from '@fortawesome/free-solid-svg-icons';
+import { faClock,} from '@fortawesome/free-regular-svg-icons';
 import { CountUp } from 'use-count-up';
 import logo1 from '../../img/logo_1.png';
 import logo2 from '../../img/logo_2.png';
@@ -24,7 +24,7 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setitems(data))
 
-    }, [])
+    }, []);
 
     const onComplete = () => {
       // do your stuff here
@@ -52,7 +52,7 @@ const Home = () => {
                             organizational objectives. It is the fuel that allows common people to attain
                             uncommon results</p>
                         <button className='btn-slide'>
-                            <Link to='/blog'>Learn More</Link>
+                            <Link to='/blog'>Learn More <FontAwesomeIcon icon={faArrowRight}/></Link>
                         </button>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -66,7 +66,7 @@ const Home = () => {
                             toward a common vision. The ability to direct individual accomplishments toward
                             organizational objectives</p>
                         <button className='btn-slide'>
-                            <Link to='/blog'>Learn More</Link>
+                            <Link to='/blog'>Learn More <FontAwesomeIcon icon={faArrowRight}/></Link>
                         </button>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -81,14 +81,15 @@ const Home = () => {
                             experience and for analytics and metrics about our visitors both on this website
                             and other media. To find out more about .</p>
                         <button className='btn-slide'>
-                            <Link to='/blog'>Learn More</Link>
+                            <Link to='/blog'>Learn More <FontAwesomeIcon icon={faArrowRight}/></Link>
                         </button>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            <section className='my-5 '>
             <h2 className='text-center mt-5'>
                 Inventories Items</h2>
-            <div className='home-cart-css container py-5  px-1'>
+            <div className='home-cart-css container  py-5  px-1'>
 
                 {Items
                     .slice(0, 6)
@@ -98,9 +99,20 @@ const Home = () => {
                     data = {
                         item
                     } > </HomeItems>)
+
 }
+                       
 
             </div>
+            <div className=' text-center py-4'>
+            <button className='btn-slide  '>
+                            <Link to='/manageitems'>Manage Inventories <FontAwesomeIcon icon={faArrowRight}/></Link>
+                        </button>
+
+            </div>
+              
+            
+            </section>
             <div className='my-5'>
                 <h2 className='text-center'>
                     DEPO<span className='deponic'>NIC</span>
@@ -144,12 +156,12 @@ const Home = () => {
                   <h4>Offices Worldwide</h4>
                 </div>
                 <div className=' counter-div'>
-                  <h1><FontAwesomeIcon className='mt-4 me-2' icon={faUser} />
+                  <h1><FontAwesomeIcon className='mt-4 me-2' icon={faUsers} />
                   {MyComponent2()} </h1>
                   <h4>Hardworking People</h4>
                 </div>
                 <div className=' counter-div'>
-                  <h1><FontAwesomeIcon className='mt-4 me-2' icon={faAngleDoubleUp} />  {MyComponent3()}</h1>
+                  <h1><FontAwesomeIcon className='mt-4 me-2' icon={faEarth} />  {MyComponent3()}</h1>
                   <h4>Countries Covered</h4>
                 </div>
                 <div className=' counter-div'>

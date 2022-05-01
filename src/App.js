@@ -12,6 +12,7 @@ import Requeir from './components/Requeir/Requeir';
 import Inventories from './components/inventori/Inventories'
 import Error from './components/404Error/Error';
 import Footer from './components/Footer/Footer';
+import AddNewItems from './components/Items/AddNewItems';
 
 
 function App() {
@@ -29,8 +30,15 @@ function App() {
           </Requeir>
         }></Route>
         <Route path='myitems' element={<MyItems></MyItems>}></Route>
-        <Route path='/manageitems' element={<ManageItems></ManageItems>}></Route>
+        <Route path='/manageitems' element={
+          <Requeir>
+        
+        <ManageItems></ManageItems>
+        </Requeir>}>
+          
+        </Route>
         <Route path='/blog' element={<Blogs></Blogs>}></Route>
+        <Route path='/addnew' element={<AddNewItems></AddNewItems>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/singup' element={<SingUp></SingUp>}></Route>
         <Route path='/menage' element={<ManageItems></ManageItems>}></Route>

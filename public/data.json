@@ -2,55 +2,64 @@
     {
       "id": "626cdcc4590077f9825c4254",
       "price": "$269.34",
-      "quantity":55,
+      "quantity":"55",
+      "spname":"warner hary",
       "pic": "/image/img-1.jpg",
       "name": "Laptop-22F",
-      "about": "Ut sint non occaecat quis voluptate veniam ullamco sit nisi. Amet officia nostrud minim fugiat dolor consequat occaecat aute Lorem minim culpa. Ad nisi irure nostrud ex anim labore exercitation eiusmod. Deserunt duis non amet amet laborum cupidatat.  "
+      "about": "Ut sint non occaecat quis voluptate veniam ullamco sit nisi. Amet officia nostrud minim fugiat dolor consequat occaecat aute Lorem minim culpa.   "
     },
     {
       "id": "626cdcc494828968af6efac6",
       "price": "$326.75",
-      "quantity":37,
+      "quantity":"37",
+      "spname":"Niloy Khan",
       "pic": "/image/img-5.jpg",
       "name": "Lester Pc Mack",
-      "about": "Et officia duis deserunt tempor. Commodo enim elit velit anim magna est duis sunt dolor. Ullamco in exercitation amet Lorem. Cupidatat adipisicing aliqua ea nostrud eiusmod velit eu anim proident eu laborum. "
+      "about": "Et officia duis deserunt tempor. Commodo enim elit velit anim magna est duis sunt dolor.  "
     },
     {
       "id": "626cdcc49286c71b59ae6b08",
       "price": "$366.82",
-      "quantity":207,
+      "quantity":"204",
+      
       "pic": "/image/img-3.jpg",
+      "spname":"sadikur",
       "name": "Candice HeadPhone",
-      "about": "Aute ea fugiat sunt sit sint tempor enim veniam incididunt quis laborum ad. Culpa quis aliquip ad cupidatat et ex elit laborum cillum in nulla. Culpa tempor et qui consectetur aliquip commodo adipisicing cupidatat fugiat"
+      "about": "Aute ea fugiat sunt sit sint tempor enim veniam incididunt quis laborum ad. Culpa quis aliquip ad cupidatat et ex elit laborum cillum in nulla."
     },
     {
       "id": "626cdcc4f6b829ba9454b744",
       "price": "$318.35",
-      "quantity":28,
+      "quantity":"28",
+      "spname":"amin alom",
       "pic": "/image/img-4.jpg",
       "name": "Owens Gaming PC",
-      "about": "Reprehenderit eiusmod elit ex dolor laborum elit do aute reprehenderit adipisicing ullamco nulla. Non officia aute laborum nulla et magna nostrud. Esse sit fugiat elit cupidatat occaecat. Voluptate culpa aute aliqua non cupidatat ut laborum eu irure."
+      "about": "Reprehenderit eiusmod elit ex dolor laborum elit do aute reprehenderit adipisicing ullamco nulla. Non officia aute laborum nulla et magna nostrud. "
     },
     {
       "id": "626cdcc474c792b0f6822a18",
       "price": "$318.81",
-      "quantity":84,
+      "quantity":"84",
+      "spname":"sadif raiyan",
       "pic": "/image/img-6.jpg",
       "name": "HP-OY3",
-      "about": "Dolore aliquip occaecat laboris exercitation esse commodo tempor ad incididunt ipsum ullamco. Duis incididunt laboris labore pariatur pariatur et adipisicing. Laboris et laboris commodo culpa exercitation minim "
+      
+      "about": "Dolore aliquip occaecat laboris exercitation esse commodo tempor ad incididunt ipsum ullamco. m "
     },
     {
       "id": "626cdcc45c026a5de8fef9e8",
       "price": "$149.78",
-      "quantity":50,
+      "quantity":"50",
+      "spname":"kawsar ",
       "pic": "/image/img-7.jpg",
       "name": "Eileen Joyner",
-      "about": "Quis dolor consectetur laborum quis amet ipsum deserunt commodo Lorem in deserunt velit proident. Minim reprehenderit velit aliquip veniam culpa labore proident. Veniam laboris nulla aliquip Lorem ea mollit. Voluptate incididunt "
+      "about": "Quis dolor consectetur laborum quis amet ipsum deserunt commodo Lorem in deserunt velit proident.  "
     },
     {
       "id": "626cdcc40508735bc29c916f",
       "price": "$165.31",
-      "quantity":29,
+      "quantity":"29",
+      "spname":"niloy khan",
       "pic": "/image/img-8.jpg",
       "name": "Judy Potts",
       "about": "Ex elit cillum esse do labore enim sint elit pariatur duis sunt fugiat nostrud. Id mollit tempor magna dolore reprehenderit nulla dolore aliquip et velit do sit in. Adipisicing reprehenderit magna occaecat est sit nostrud quis sit"
@@ -58,7 +67,8 @@
     {
       "id": "626cdcc4b133df598fca68e4",
       "price": "$273.28",
-      "quantity":65,
+      "quantity":"65",
+      "spname":"rakib hossain",
       "pic": "/image/img-9.jpg",
       "name": "Chavez Bond",
       "about": "Laborum cupidatat id exercitation commodo consequat proident elit. In excepteur reprehenderit nulla adipisicing exercitation. Laboris laborum ad adipisicing laboris laborum."
@@ -66,7 +76,8 @@
     {
       "id": "626cdcc44954dd6aa083",
       "price": "$266.32",
-      "quantity":10,
+      "quantity":"10",
+      "spname":"amin alom",
       "pic": "/image/img-10.jpg",
       "name": "Huber Vinson",
       "about": "Lorem ipsum adipisicing adipisicing fugiat consequat non voluptate incididunt adipisicing dolore. Esse veniam occaecat non Lorem elit ex. Duis laborum tempor sit laborum. Duis fugiat quis adipisicing laborum consectetur ullamco nostrud eiusmod. "
@@ -74,7 +85,8 @@
     {
       "id": "627",
       "price": "$350.98",
-      "quantity":41,
+      "quantity":"41",
+      "spname":"Habibullah",
       "pic": "/image/img-12.jpg",
       "name": "Smart Tab",
       "about": "Voluptate id reprehenderit ullamco id voluptate. Velit ad ut anim eu incididunt mollit elit aliquip pariatur sint. Exercitation in nulla et enim aute fugiat quis eiusmod commodo aliqua ipsum aliqua sit."
@@ -82,7 +94,8 @@
     {
       "id": "cdcc4a7759609cf9b1927",
       "price": "$990.98",
-      "quantity":20,
+      "quantity":"20",
+      "spname":"amin alom",
       "pic": "/image/img-13.jpg",
       "name": "Mc-n Laptop",
       "about": "Voluptate id reprehenderit ullamco id voluptate. Velit ad ut anim eu incididunt mollit elit aliquip pariatur sint. Exercitation in nulla et enim aute fugiat quis eiusmod commodo aliqua ipsum aliqua sit."
@@ -90,7 +103,8 @@
     {
       "id": "626cdcc4a7759609c",
       "price": "$360.98",
-      "quantity":32,
+      "quantity":"32",
+      "spname":"romij uddin",
       "pic": "/image/img-14.jpg",
       "name": "BOx-5kl",
       "about": "Voluptate id reprehenderit ullamco id voluptate. Velit ad ut anim eu incididunt mollit elit aliquip pariatur sint. Exercitation in nulla et enim aute fugiat quis eiusmod commodo aliqua ipsum aliqua sit."
@@ -98,7 +112,8 @@
     {
       "id": "626cdcc4a775961927",
       "price": "$720.98",
-      "quantity":50,
+      "quantity":"50",
+      "spname":"warner hary",
       "pic": "/image/img-2.jpg",
       "name": "Cool-laptop",
       "about": "Voluptate id reprehenderit ullamco id voluptate. Velit ad ut anim eu incididunt mollit elit aliquip pariatur sint. Exercitation in nulla et enim aute fugiat quis eiusmod commodo aliqua ipsum aliqua sit."
@@ -106,7 +121,8 @@
     {
       "id": "6cc4a7759609cf9b1927",
       "price": "$550.0",
-      "quantity":22,
+      "quantity":"22",
+      "spname":"habib",
       "pic": "/image/img-11.jpg",
       "name": "Mcgowan ll4",
       "about": "Voluptate id reprehenderit ullamco id voluptate. Velit ad ut anim eu incididunt mollit elit aliquip pariatur sint. Exercitation in nulla et enim aute fugiat quis eiusmod commodo aliqua ipsum aliqua sit."

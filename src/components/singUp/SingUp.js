@@ -2,7 +2,7 @@ import { faEnvelope, faLock, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import './singup.css';
@@ -13,6 +13,9 @@ const SingUp = () => {
     const [password,setpassword]=useState([]);
     const [conpass,setconpass]=useState([]);
     const [errors,seterrors]=useState([]);
+
+    let location = useLocation()
+    let from = location.state?.from?.pathname || "/";
     const navigate=useNavigate();
 
     const [
@@ -61,7 +64,7 @@ const SingUp = () => {
     }
     if(user || user1){
         
-        navigate('/inven')
+        navigate(from, { replace: true });
     }
     return (
         <div className='py-5 px-2 d-lg-flex  align-items-center  singup-custom-div'>
