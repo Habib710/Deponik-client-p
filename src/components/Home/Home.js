@@ -163,14 +163,14 @@ const Home = () => {
             <section className='container partner-section '>
               <div className='partner-head-div row'>
 
-                <div className='col-lg-3'><h1>OUR PARTNERS</h1></div>
+                <div className='col-lg-3'><h1>OUR <span className='deponic'>PARTNERS</span></h1></div>
                 <div className='col-lg-9 pt-2'><hr className='hr-css ' /></div>
               </div>
 
               {/* logo */}
               <div className='py-5 logo-div text-center'>
 
-                <div className='logo-back'><img src={logo1} alt="img" /></div>
+                <div className='logo-back '><img src={logo1} alt="img" /></div>
                 <div><img src={logo2} alt="img" /></div>
                 <div className='logo-back'><img src={logo3} alt="img" /></div>
                 <div><img src={logo4} alt="img" /></div>
