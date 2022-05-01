@@ -2,14 +2,16 @@ import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useParams } from 'react-router-dom';
 
 
 import CustomLink from '../../custom/CustomLink';
 import auth from '../../firebase.init';
-import './Header.css'
+import './Header.css';
 
 const Header = () => {
   const [user] = useAuthState(auth);
+  
 
   const singout = () => {
     signOut(auth);
@@ -26,7 +28,7 @@ const Header = () => {
       <Nav className="ms-auto">
 
         <CustomLink to='/home' >Home</CustomLink>
-        <CustomLink to='/inven'> Inventories</CustomLink>
+       
 
         {
           user?<CustomLink to='/manageitems'>Manage Items</CustomLink>:''

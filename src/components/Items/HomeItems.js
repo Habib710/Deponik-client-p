@@ -1,12 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import './items.css';
 import {  faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 const HomeItems = (props) => {
 
     const {id,name,pic,price,about,quantity,spname}=props.data;
+    const naviget=useNavigate()
+    const navigating=()=>{
+        naviget('/inven/'+ id)
+    }
     
     return (
         <div>
@@ -25,8 +29,8 @@ const HomeItems = (props) => {
             
             <div className='p-3'>
                 <h4>Quantity : {quantity}</h4>
-                <Link to='/inven'>
-                <button className='details-css'>Stock update <FontAwesomeIcon icon={faArrowRight}/></button>
+                <Link to={'/inven/'+id}>
+                <button  className='details-css'>Stock update <FontAwesomeIcon icon={faArrowRight}/></button>
                 
                 </Link>
             
