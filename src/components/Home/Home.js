@@ -72,7 +72,7 @@ const Home = () => {
            <div className='service-div text-center'>
                <img width='100%' src={img3} alt="img" />
                <h2 className='py-3'> Careness</h2>
-               <p>  Aspernatur eveniet, ipsa quia modi cum impedit neque illo atque molestias, ipsum nisi tempora repellat non voluptates quos eos maxime. </p>
+               <p>  Aspernatur so eveniet, ipsa quia modi cum impedit neque illo atque molestias, ipsum nisi tempora repellat non voluptates quos eos maxime. </p>
            </div>
 
        </div>
