@@ -1,7 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash, } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 
 const ManageItemcart = (props) => {
-    const{_id,name,pic,quantity,price}=props.data;
+    const{name,pic,quantity,price}=props.data;
     return (
         <div className='text-center'>
             <div className='manage-cart row'>
@@ -16,7 +18,7 @@ const ManageItemcart = (props) => {
 
                 </div>
                 <div className='col-lg-3 text-center   p-5'>
-                    <button className='btn-delete'>Delete</button>
+                    <button className='btn-delete'>Delete <FontAwesomeIcon icon={faTrash}/></button>
                 </div>
             
 
