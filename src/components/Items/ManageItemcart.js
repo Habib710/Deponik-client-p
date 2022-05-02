@@ -3,10 +3,34 @@ import { faTrash, } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 
 const ManageItemcart = (props) => {
-    const{name,pic,quantity,price}=props.data;
+
+    const{_id,name,pic,quantity,price}=(props.data);
+    
+     
+    const hendeleDelet=id=>{
+       
+
+        const url=`http://localhost:5000/items/${id}`;
+        fetch(url,{
+            method:'DELETE'
+        })
+        .then(res=>res.json())
+        .then(data=>{
+           if(data.deleteCount>0){
+             
+           }
+
+        })
+    
+    
+        
+
+
+    }
+
     return (
         <div className='text-center'>
-            <div className='manage-cart row'>
+            <div  className='manage-cart row'>
                 <div className='manage-img col-lg-3 '>
                     <img width='100%' src={pic} alt="" />
                 </div>
@@ -18,7 +42,7 @@ const ManageItemcart = (props) => {
 
                 </div>
                 <div className='col-lg-3 text-center   p-5'>
-                    <button className='btn-delete'>Delete <FontAwesomeIcon icon={faTrash}/></button>
+                    <button onClick={()=>hendeleDelet(_id)} className='btn-delete'>Delete <FontAwesomeIcon icon={faTrash}/></button>
                 </div>
             
 

@@ -15,6 +15,53 @@ const Inventories = () => {
             .then(data => setitem(data))
 
     }, [id]);
+
+
+  
+    
+    const deliver=()=>{
+        
+        const newstock=  Item.quantity-1;
+        const stock= {newstock}
+     
+       
+        fetch(`http://localhost:5000/items/${id}`,{
+            method:'PUT',
+            headers:{
+                'content-type':'application/json'
+
+
+            },body: JSON.stringify(stock)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data);
+        });
+        window.location.reload(true);
+    }
+    const restock=event=>{
+        event.preventDefault();
+        const numbers=event.target.number.value;
+        const stocks={numbers};
+
+        fetch(`http://localhost:5000/items/${id}`,{
+            method:'PUT',
+            headers:{
+                'content-type':'application/json'
+
+
+            },body: JSON.stringify(stocks)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data);
+        });
+        window.location.reload(true);
+
+    }
+    
+    
+   
     
 
     return (
@@ -22,7 +69,7 @@ const Inventories = () => {
             <h1 className='py-5 text-center'>Details About The Item</h1>
             <div className=' row detail-cart mb-4 '>
                 <div className='col-lg-4 m-2 ime-car-detail'>
-                    <img width='100%' height='250px'  src={Item.pic} alt="img" />
+                    <img width='100%' height='280px'  src={Item.pic} alt="img" />
                 </div>
                 <div className='col-lg-4 m-2'>
                 <h2>{Item.name}</h2>
@@ -35,15 +82,15 @@ const Inventories = () => {
                 <div className='col-lg-3 m-2'>
                     <h2>Quantity : {Item.quantity}</h2>
 
-                    <button className='btn-deliver my-2'>Delivered <FontAwesomeIcon icon={faPaperPlane}/></button>
+                    <button onClick={deliver} className='btn-deliver my-2'>Delivered <FontAwesomeIcon icon={faPaperPlane}/></button>
 
                     <div className='my-3 p-3'>
-                        <form className='form-css'>
+                        <form onSubmit={restock} className='form-css'>
                             <h4>Restock the item</h4>
-                            <input type="number" placeholder='Quantity' />
+                            <input type="number" name='number' placeholder='Quantity' />
                             <br /><br />
-                            <button className='btn-add'>
-                                Restock <FontAwesomeIcon icon={faPlus}/></button>
+                            <input type='submit' value='Restock' className='btn-add'>
+                                 </input>
                         </form>
                     </div>
                 </div>
