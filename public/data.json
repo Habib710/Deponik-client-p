@@ -6,10 +6,11 @@
       "spname":"warner hary",
       "pic": "/image/img-1.jpg",
       "name": "Laptop-22F",
+      "email":"abc@d.com",
       "about": "Ut sint non occaecat quis voluptate veniam ullamco sit nisi. Amet officia nostrud minim fugiat dolor consequat occaecat aute Lorem minim culpa.   "
     },
     {
-      
+      "email":"abc@d.com",
       "price": "$326.75",
       "quantity":"37",
       "spname":"Niloy Khan",
@@ -21,14 +22,14 @@
       
       "price": "$366.82",
       "quantity":"204",
-      
+      "email":"abc@d.com",
       "pic": "/image/img-3.jpg",
       "spname":"sadikur",
       "name": "Candice HeadPhone",
       "about": "Aute ea fugiat sunt sit sint tempor enim veniam incididunt quis laborum ad. Culpa quis aliquip ad cupidatat et ex elit laborum cillum in nulla."
     },
     {
-      
+      "email":"abc@d.com",
       "price": "$318.35",
       "quantity":"28",
       "spname":"amin alom",
@@ -37,7 +38,7 @@
       "about": "Reprehenderit eiusmod elit ex dolor laborum elit do aute reprehenderit adipisicing ullamco nulla. Non officia aute laborum nulla et magna nostrud. "
     },
     {
-      
+      "email":"abc@d.com",
       "price": "$318.81",
       "quantity":"84",
       "spname":"sadif raiyan",
@@ -47,7 +48,7 @@
       "about": "Dolore aliquip occaecat laboris exercitation esse commodo tempor ad incididunt ipsum ullamco. m "
     },
     {
-      
+      "email":"abc@d.com",
       "price": "$149.78",
       "quantity":"50",
       "spname":"kawsar ",
@@ -56,7 +57,7 @@
       "about": "Quis dolor consectetur laborum quis amet ipsum deserunt commodo Lorem in deserunt velit proident.  "
     },
     {
-      
+      "email":"abc@d.com",
       "price": "$165.31",
       "quantity":"29",
       "spname":"niloy khan",
@@ -65,7 +66,7 @@
       "about": "Ex elit cillum esse do labore enim sint elit pariatur duis sunt fugiat nostrud. Id mollit tempor magna dolore reprehenderit nulla dolore aliquip et velit do sit in. Adipisicing reprehenderit magna occaecat est sit nostrud quis sit"
     },
     {
-      
+      "email":"abc@d.com",
       "price": "$273.28",
       "quantity":"65",
       "spname":"rakib hossain",
@@ -74,7 +75,7 @@
       "about": "Laborum cupidatat id exercitation commodo consequat proident elit. In excepteur reprehenderit nulla adipisicing exercitation. Laboris laborum ad adipisicing laboris laborum."
     },
     {
-      
+      "email":"abc@d.com",
       "price": "$266.32",
       "quantity":"10",
       "spname":"amin alom",
@@ -83,7 +84,7 @@
       "about": "Lorem ipsum adipisicing adipisicing fugiat consequat non voluptate incididunt adipisicing dolore. Esse veniam occaecat non Lorem elit ex. Duis laborum tempor sit laborum. Duis fugiat quis adipisicing laborum consectetur ullamco nostrud eiusmod. "
     },
     {
-      
+      "email":"abc@d.com",
       "price": "$350.98",
       "quantity":"41",
       "spname":"Habibullah",
@@ -92,7 +93,7 @@
       "about": "Voluptate id reprehenderit ullamco id voluptate. Velit ad ut anim eu incididunt mollit elit aliquip pariatur sint. Exercitation in nulla et enim aute fugiat quis eiusmod commodo aliqua ipsum aliqua sit."
     },
     {
-      
+      "email":"abc@d.com",
       "price": "$990.98",
       "quantity":"20",
       "spname":"amin alom",
@@ -101,7 +102,7 @@
       "about": "Voluptate id reprehenderit ullamco id voluptate. Velit ad ut anim eu incididunt mollit elit aliquip pariatur sint. Exercitation in nulla et enim aute fugiat quis eiusmod commodo aliqua ipsum aliqua sit."
     },
     {
-      
+      "email":"abc@d.com",
       "price": "$360.98",
       "quantity":"32",
       "spname":"romij uddin",
@@ -110,7 +111,7 @@
       "about": "Voluptate id reprehenderit ullamco id voluptate. Velit ad ut anim eu incididunt mollit elit aliquip pariatur sint. Exercitation in nulla et enim aute fugiat quis eiusmod commodo aliqua ipsum aliqua sit."
     },
     {
-      
+      "email":"abc@d.com",
       "price": "$720.98",
       "quantity":"50",
       "spname":"warner hary",
@@ -119,7 +120,7 @@
       "about": "Voluptate id reprehenderit ullamco id voluptate. Velit ad ut anim eu incididunt mollit elit aliquip pariatur sint. Exercitation in nulla et enim aute fugiat quis eiusmod commodo aliqua ipsum aliqua sit."
     },
     {
-      
+      "email":"abc@d.com",
       "price": "$550.0",
       "quantity":"22",
       "spname":"habib",

@@ -39,7 +39,7 @@ const Header = () => {
         {
           user?<CustomLink to='/myitems'>My Items</CustomLink>:''
         }
-        <CustomLink to='/blog'>Blog</CustomLink>
+        <CustomLink to='/blog'>Blogs</CustomLink>
         {
           user?<button onClick={singout} className='btn btn-singout'>Sing Out</button>
           :

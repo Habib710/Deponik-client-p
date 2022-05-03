@@ -57,6 +57,43 @@ transform: scale(1.07);
     
 
 }
+.main-add-css{
+    display: flex;
+   
+    
+
+}
+.form-add-css{
+    padding: 20px;
+    border-radius: 8px;
+   
+    width: 550px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: rgba(250, 67, 168, 0.651) 0px 2px 4px 0px, rgba(223, 70, 185, 0.514) 0px 2px 16px 0px;
+
+}
+.form-add-css input{
+    border-radius: 5px;
+    outline: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 40px;
+   
+
+}
+.btn-add-new{
+    background-color: rgb(255, 68, 171);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-weight: 500;
+    
+}
+.btn-add-new:hover{
+    background-color: rgb(39, 228, 70);
+    color: black;
+    transition: .6s ease-in-out;
+
+}
 
 
 
@@ -78,6 +115,15 @@ transform: scale(1.07);
     }
     .manage-ditel-div{
         border: none;
+    }
+    .form-add-css{
+        padding: 20px;
+     
+       
+        width: 300px;
+        font-size: 20px;
+        font-weight: 500;
+    
     }
     
 

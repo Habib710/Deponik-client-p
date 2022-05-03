@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { faArrowRight, faPaperPlane, faPlus, } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faPaperPlane,} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './invent.css';
 
@@ -14,7 +14,7 @@ const Inventories = () => {
             .then(res => res.json())
             .then(data => setitem(data))
 
-    }, [id]);
+    }, [id,Item]);
 
 
   
@@ -35,14 +35,21 @@ const Inventories = () => {
         })
         .then(res=>res.json())
         .then(data=>{
-            console.log(data);
+            setitem(data);
         });
-        window.location.reload(true);
-    }
+        
+    };
+
     const restock=event=>{
+        
         event.preventDefault();
-        const numbers=event.target.number.value;
-        const stocks={numbers};
+        if(event.target.number.value<1){
+            return alert("plz input quantity")
+        }
+
+        const old=Item.quantity;
+        const newstock=parseInt(old) + parseInt(event.target.number.value);
+        const stock={newstock};
 
         fetch(`http://localhost:5000/items/${id}`,{
             method:'PUT',
@@ -50,15 +57,17 @@ const Inventories = () => {
                 'content-type':'application/json'
 
 
-            },body: JSON.stringify(stocks)
+            },body: JSON.stringify(stock)
         })
         .then(res=>res.json())
         .then(data=>{
-            console.log(data);
+            setitem(data);
         });
-        window.location.reload(true);
 
-    }
+       
+        
+
+    };
     
     
    
@@ -85,13 +94,16 @@ const Inventories = () => {
                     <button onClick={deliver} className='btn-deliver my-2'>Delivered <FontAwesomeIcon icon={faPaperPlane}/></button>
 
                     <div className='my-3 p-3'>
+
                         <form onSubmit={restock} className='form-css'>
                             <h4>Restock the item</h4>
                             <input type="number" name='number' placeholder='Quantity' />
                             <br /><br />
+
                             <input type='submit' value='Restock' className='btn-add'>
                                  </input>
                         </form>
+
                     </div>
                 </div>
             </div>
