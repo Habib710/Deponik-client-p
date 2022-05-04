@@ -28,9 +28,7 @@ const ManageItems = () => {
           setitems(remain);
 
         })}
-        
-
-
+    
     }
 
 

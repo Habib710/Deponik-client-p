@@ -67,7 +67,7 @@ transform: scale(1.07);
     padding: 20px;
     border-radius: 8px;
    
-    width: 550px;
+    width: 650px;
     font-size: 20px;
     font-weight: 500;
     box-shadow: rgba(250, 67, 168, 0.651) 0px 2px 4px 0px, rgba(223, 70, 185, 0.514) 0px 2px 16px 0px;
@@ -93,6 +93,9 @@ transform: scale(1.07);
     color: black;
     transition: .6s ease-in-out;
 
+}
+.myadd-div-css{
+    min-height: 60vh;
 }
 
 
@@ -120,7 +123,7 @@ transform: scale(1.07);
         padding: 20px;
      
        
-        width: 300px;
+        max-width: 300px;
         font-size: 20px;
         font-weight: 500;
     

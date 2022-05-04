@@ -16,13 +16,18 @@ const AddNewItems = () => {
   
 
 
-    const newitems={name,about,price,pic,quantity,spname,email};
+    const newitems={name,about,price,pic,quantity,spname, email};
+ 
+ 
 
 
     const hendlename=event=>{
         const newname=event.target.value;
         if(newname){
         setname(newname)};
+        
+            setemail(user?.email)
+        
     }
     const hendleprice=event=>{
         const newprice=event.target.value;
@@ -51,9 +56,15 @@ const AddNewItems = () => {
         if(newimage){
         setimg(newimage)}
     }
+    // const hendleemail=event=>{
+    //     const email=event.target.value;
+    //     setemail(email)
+       
+    // }
 
-    const Onsubmit=event=>{
+    const Onsubmit=event=>{ 
         event.preventDefault();
+        
         if(!newitems){
             return alert("input plz")
         }
@@ -69,16 +80,11 @@ const AddNewItems = () => {
         })
         .then(res=>res.json())
         .then(data=>{
-            console.log(data);
+           
             alert('Item Added successfuly')
         })
     
-        if(user){
-            
-            
-            setemail(user.email);
-            
-        }
+      
         
     }
 
@@ -90,7 +96,9 @@ const AddNewItems = () => {
 
             
             <div className=' mx-auto'>
-            <form onSubmit={Onsubmit} className='form-add-css py-5 mb-5'>
+                
+            <form onSubmit={Onsubmit} className='form-add-css py-5 mb-5 container'>
+            <h4 className='text-center'>Complete the form to Add New Item</h4>
 
                 <label htmlFor="">Item Name</label><br />
                 <input onBlur={hendlename}  type="text"required /><br /><br />
@@ -104,8 +112,10 @@ const AddNewItems = () => {
                 <input onBlur={hendleabout} type="text"required /><br /><br />
                 <label htmlFor="">Item Image url</label><br />
                 <input onBlur={hendleimage} type="text" required/><br /><br />
+                <label htmlFor="">Your Email</label>
+                <input  type="email" value={user?.email} disabled /><br /><br />
                 <br />
-                <input  className='btn-add-new' value='Add Now' type="submit" />
+                <input   className='btn-add-new' value='Add Now' type="submit" />
 
 
             </form>
