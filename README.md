@@ -1,10 +1,22 @@
-# Getting Started with Create React App
+# Welcome TO  DEPONIC
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## LIVE Website Link : [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Description about DEPONIC
 
-In the project directory, you can run:
+Warehouse Management of DEPONIC solutions additionally enable companies to maximize their labor and space utilization and equipment investments by coordinating and optimizing resource usage and material flows. Specifically, WMS systems are designed to support the needs of an entire global supply chain, including distribution, manufacturing, asset-intensive, and service businesses.
+
+##  Features and Functionality
+
+* Bootstarp 5
+* React js
+* REact Router
+* node.js 
+* MOngodb
+* Firebase
+* Heroku deployment
+* Jwt
+ * REACT HOOK FORM 
 
 ### `npm start`
 

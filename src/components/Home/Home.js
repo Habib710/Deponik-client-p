@@ -180,7 +180,7 @@ const Home = () => {
               </div>
 
               {/* logo */}
-              <div className='py-5 logo-div text-center'>
+              <div className='py-5 logo-div text-center mb-5'>
 
                 <div className='logo-back '><img src={logo1} alt="img" /></div>
                 <div><img src={logo2} alt="img" /></div>

@@ -13,6 +13,7 @@ import Inventories from './components/inventori/Inventories'
 import Error from './components/404Error/Error';
 import Footer from './components/Footer/Footer';
 import AddNewItems from './components/Items/AddNewItems';
+import About from './components/About/About';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           
         </Route>
         <Route path='/blog' element={<Blogs></Blogs>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
         <Route path='/addnew' element={<AddNewItems></AddNewItems>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/singup' element={<SingUp></SingUp>}></Route>

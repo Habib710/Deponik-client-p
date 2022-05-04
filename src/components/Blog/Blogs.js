@@ -5,7 +5,7 @@ const Blogs = () => {
     return (
         <div className='container my-5 text-center'>
             <div className='my-5 p-5'>
-                <h1>Stackoverflow Link : <a href="https://stackoverflow.com/questions/72102741/how-to-deploy-server-site-on-heroku" target='_blank'>Go To Link</a></h1>
+                <h1>Stackoverflow Link : <a href='https://stackoverflow.com/questions/72102741/how-to-deploy-server-site-on-heroku' target='_blank'>Go To Link</a></h1>
 
             </div>
             <div className='div-1'>
