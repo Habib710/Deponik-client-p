@@ -9,6 +9,8 @@ import './Login.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../loading/Loading';
+import Swal from 'sweetalert2';
+import 'animate.css';
 
 const Login = () => {
     let location = useLocation()
@@ -53,6 +55,16 @@ const Login = () => {
     
 
     if(user ||user1){
+        Swal.fire({
+            icon:'success',
+            title: 'Login Success  ',
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          })
         
         navigate(from, { replace: true });
     }
@@ -82,10 +94,19 @@ const Login = () => {
                
                <br /><br />
                <input className='submit-css' type="submit" value='Login' />
-               <br />
-               <br />
-               <p>New To DepoNic ? <Link to='/singup'>Sing Up Now </Link></p>
+               
+              
+               </Form>
+               <p>New To DepoNic ? <Link className='link-css' to='/singup'>Sing Up Now </Link></p>
                <p>Forget password ? <button onClick={async () => {
+                   if(email.length<3){
+                       return (Swal.fire({
+                        
+                        title: 'Valid Email Must be Needed',
+                        text:'Input  Email Please'
+                    
+                      }))
+                   }
           await sendPasswordResetEmail(email);
           toast("Email sending");}} className='btn text-primary'> Reset password</button> </p>
           <ToastContainer />
@@ -93,9 +114,9 @@ const Login = () => {
                OR
                <br />
               
-               <button onClick={()=>signInWithGoogle()} className='google-css'>Sing in With Google</button>
+               <button  onClick={()=>signInWithGoogle()} className='google-css mb-4'>Sing in With Google</button>
                
-           </Form>
+           
         </div>
             
         </div>

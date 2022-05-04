@@ -37,7 +37,7 @@
   
 }
 .submit-css{
-    background-color: rgb(252, 73, 198);
+    background-color: rgb(240, 48, 182);
     border: none;
     border-radius: 10px;
     width: 100%;
@@ -52,13 +52,16 @@
 
 }
 .google-css{
-    background-color: rgb(228, 186, 215);
+    background-color: rgba(238, 101, 208, 0.411);
     border: none;
-    color: rgb(0, 0, 0);
+    color: rgb(2, 2, 2);
     font-weight: 500;
     border-radius: 10px;
     width: 100%;
     font-size: 16px;
     padding: 8px;
 
+}
+.link-css{
+    text-decoration: none;
 }

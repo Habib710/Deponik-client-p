@@ -102,7 +102,7 @@ const SingUp = () => {
                <input className='submit-css w-50' type="submit" value='Sing Up' />
                <br />
                <br />
-               <p>Have an account ? <Link to='/login'>Login Now </Link></p>
+               <p>Have an account ? <Link className='link-css' to='/login'>Login Now </Link></p>
             
               
                OR

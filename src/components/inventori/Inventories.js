@@ -64,7 +64,7 @@ const Inventories = () => {
             setitem(data);
         });
 
-       
+       event.target.reset();
         
 
     };

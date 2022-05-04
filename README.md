@@ -16,7 +16,9 @@ Warehouse Management of DEPONIC solutions additionally enable companies to maxim
 * Firebase
 * Heroku deployment
 * Jwt
- * REACT HOOK FORM 
+* REACT HOOK FORM 
+* sweetalrt2
+*  
 
 ### `npm start`
 

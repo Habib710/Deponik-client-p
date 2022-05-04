@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import Swal from 'sweetalert2';
 import auth from '../../firebase.init';
+import 'animate.css';
 
 
 const AddNewItems = () => {
@@ -74,8 +76,19 @@ const AddNewItems = () => {
         .then(res=>res.json())
         .then(data=>{
            
-            alert('Item Added successfuly')
+            Swal.fire({
+                icon:'success',
+                title: 'Item Added Sucessfuly ',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              })
         })
+
+        event.target.reset();
     
       
         
