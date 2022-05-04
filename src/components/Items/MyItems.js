@@ -51,16 +51,9 @@ const MyItems = () => {
             <div className=''>
                
                 <h3 className='pb-3'> Items: {Items.length}</h3>
-    
-                
                 {
-
-
-                    Items.map(item=>
-                        
+                    Items.map(item=>   
                         {
-                            
-                            
                             return(
                         <div className='text-center'>
                 <div  className='manage-cart row'>
@@ -87,8 +80,7 @@ const MyItems = () => {
 
     )
                 }
-            </div>
-            
+            </div>          
         </div>
     );
 };

@@ -43,13 +43,8 @@ const ManageItems = () => {
             <div className=''>
                 <h3 className='pb-3'>Total Items: {Items.length}</h3>
                 {
-
-
-                    Items.map(item=>
-                        
-                        {
-                            
-                            
+                    Items.map(item=>  
+                        { 
                             return(
                         <div className='text-center'>
                 <div  className='manage-cart row'>
@@ -75,8 +70,7 @@ const ManageItems = () => {
 
     )
                 }
-            </div>
-            
+            </div>      
         </div>
     );
 };

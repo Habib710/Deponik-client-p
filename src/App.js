@@ -25,18 +25,15 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/inven/:id' element={
 
-          <Requeir>
-            <Inventories></Inventories>
-
-          </Requeir>
+       <Requeir>
+           <Inventories></Inventories>
+        </Requeir>
         }></Route>
         <Route path='myitems' element={<MyItems></MyItems>}></Route>
         <Route path='/manageitems' element={
-          <Requeir>
-        
-        <ManageItems></ManageItems>
-        </Requeir>}>
-          
+        <Requeir> 
+           <ManageItems></ManageItems>
+        </Requeir>}> 
         </Route>
         <Route path='/blog' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>

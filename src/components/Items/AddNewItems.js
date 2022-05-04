@@ -15,12 +15,9 @@ const AddNewItems = () => {
     const [email,setemail]=useState([]);
   
 
-
     const newitems={name,about,price,pic,quantity,spname, email};
  
  
-
-
     const hendlename=event=>{
         const newname=event.target.value;
         if(newname){
@@ -56,11 +53,7 @@ const AddNewItems = () => {
         if(newimage){
         setimg(newimage)}
     }
-    // const hendleemail=event=>{
-    //     const email=event.target.value;
-    //     setemail(email)
-       
-    // }
+   
 
     const Onsubmit=event=>{ 
         event.preventDefault();
@@ -86,7 +79,7 @@ const AddNewItems = () => {
     
       
         
-    }
+    };
 
     
     return (
@@ -94,9 +87,8 @@ const AddNewItems = () => {
             <h1 className='text-center py-5'>Add New Items</h1>
             <div className='container main-add-css mb-5'>
 
-            
             <div className=' mx-auto'>
-                
+
             <form onSubmit={Onsubmit} className='form-add-css py-5 mb-5 container'>
             <h4 className='text-center'>Complete the form to Add New Item</h4>
 
@@ -116,7 +108,6 @@ const AddNewItems = () => {
                 <input  type="email" value={user?.email} disabled /><br /><br />
                 <br />
                 <input   className='btn-add-new' value='Add Now' type="submit" />
-
 
             </form>
             </div>
