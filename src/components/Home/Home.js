@@ -175,7 +175,7 @@ const Home = () => {
             <section className='container partner-section '>
               <div className='partner-head-div row'>
 
-                <div className='col-lg-3'><h1>OUR <span className='deponic'>PARTNERS</span></h1></div>
+                <div className='col-lg-4'><h1>OUR <span className='deponic'>PARTNERS</span></h1></div>
                 <div className='col-lg-8 pt-2'><hr className='hr-css ' /></div>
               </div>
 
