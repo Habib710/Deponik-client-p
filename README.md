@@ -1,6 +1,6 @@
 # Welcome TO  DEPONIC
 
-## LIVE Website Link : [Create React App](https://github.com/facebook/create-react-app).
+## LIVE Website Link : [https://deponic-62e80.web.app/home](https://deponic-62e80.web.app/home).
 
 ## Description about DEPONIC
 
@@ -18,7 +18,7 @@ Warehouse Management of DEPONIC solutions additionally enable companies to maxim
 * Jwt
 * REACT HOOK FORM 
 * sweetalrt2
-*  
+ 
 
 ### `npm start`
 
