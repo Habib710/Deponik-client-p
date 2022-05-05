@@ -10,7 +10,7 @@ const Inventories = () => {
     const [Item,
         setitem] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/items/${id}`)
+        fetch(`https://deponic.herokuapp.com/items/${id}`)
             .then(res => res.json())
             .then(data => setitem(data))
 
@@ -25,7 +25,7 @@ const Inventories = () => {
         const stock= {newstock}
      
        
-        fetch(`http://localhost:5000/items/${id}`,{
+        fetch(`https://deponic.herokuapp.com/items/${id}`,{
             method:'PUT',
             headers:{
                 'content-type':'application/json'
@@ -51,7 +51,7 @@ const Inventories = () => {
         const newstock=parseInt(old) + parseInt(event.target.number.value);
         const stock={newstock};
 
-        fetch(`http://localhost:5000/items/${id}`,{
+        fetch(`https://deponic.herokuapp.com/items/${id}`,{
             method:'PUT',
             headers:{
                 'content-type':'application/json'

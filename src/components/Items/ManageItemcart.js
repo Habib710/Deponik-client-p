@@ -10,7 +10,7 @@ const ManageItemcart = (props) => {
     const hendeleDelet=id=>{
        
 
-        const url=`http://localhost:5000/items/${id}`;
+        const url=`https://deponic.herokuapp.com/items/${id}`;
         fetch(url,{
             method:'DELETE'
         })

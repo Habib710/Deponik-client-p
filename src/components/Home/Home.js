@@ -20,7 +20,7 @@ const Home = () => {
     const [Items,
         setitems] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/items")
+        fetch("https://deponic.herokuapp.com/items")
             .then(res => res.json())
             .then(data => setitems(data))
 
@@ -115,8 +115,8 @@ const Home = () => {
             </section>
             <div className='my-5'>
                 <h2 className='text-center'>
-                    DEPO<span className='deponic'>NIC</span>
-                    Services</h2>
+                    DEPO<span className='deponic'>NIC 
+                    </span>  Services</h2>
                 <div className='container service-main py-5 mt-4'>
                     <div className='service-div text-center'>
                         <img width='100%' src={img1} alt="img"/>

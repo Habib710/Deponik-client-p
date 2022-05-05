@@ -64,11 +64,13 @@ const AddNewItems = () => {
             return alert("input plz")
         }
 
-        const url=`http://localhost:5000/items`;
+        const url=`https://deponic.herokuapp.com/items`;
         fetch(url,{
 
             method:'POST',
             headers:{
+                'authorization':`${user.email} ${localStorage.getItem('AccessToken')}`,
+                
                 'content-type':'application/json'
             },
             body:JSON.stringify(newitems)

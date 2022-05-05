@@ -13,7 +13,7 @@ const ManageItems = () => {
     const [Items,
         setitems] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/items")
+        fetch("https://deponic.herokuapp.com/items")
             .then(res => res.json())
             .then(data => setitems(data))
 
@@ -33,7 +33,7 @@ const ManageItems = () => {
           }).then((result) => {
             if (result.isConfirmed) {
 
-                const url=`http://localhost:5000/items/${id}`;
+                const url=`https://deponic.herokuapp.com/items/${id}`;
                 fetch(url,{
                     method:'DELETE'
                 })

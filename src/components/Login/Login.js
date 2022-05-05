@@ -55,6 +55,9 @@ const Login = () => {
     
 
     if(user ||user1){
+  
+      navigate(from, { replace: true });
+// ok messeage
         Swal.fire({
             icon:'success',
             title: 'Login Success  ',
@@ -65,8 +68,10 @@ const Login = () => {
               popup: 'animate__animated animate__fadeOutUp'
             }
           })
+
+          
         
-        navigate(from, { replace: true });
+        
     }
 
     return (
