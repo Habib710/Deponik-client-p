@@ -25,7 +25,7 @@ const HomeItems = (props) => {
 
             </div>
             
-            <div className='p-3'>
+            <div className='pb-3'>
                 <h4>Quantity : {quantity}</h4>
                 <Link to={'/inven/'+_id}>
                 <button  className='details-css'>Stock update <FontAwesomeIcon icon={faArrowRight}/></button>
