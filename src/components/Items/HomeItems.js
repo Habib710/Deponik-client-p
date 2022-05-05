@@ -15,7 +15,7 @@ const HomeItems = (props) => {
             
             <div className='cart-css'>
             <img width='100%'  src={pic} alt="" />
-            <div className='text-css p-2 my-4 '>
+            <div className='text-css p-2 my-2 '>
 
             <h4>{name}</h4>
             <h5>Price: {price}</h5>
