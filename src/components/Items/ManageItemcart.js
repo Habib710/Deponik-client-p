@@ -21,10 +21,6 @@ const ManageItemcart = (props) => {
            }
 
         })
-    
-    
-        
-
 
     }
 
