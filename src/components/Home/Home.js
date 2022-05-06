@@ -77,9 +77,8 @@ const Home = () => {
                             <br/>
                             Hand will Lead You to Get Best</p>
                         <p className='slide-paragraf'>
-                            We use this information in order to improve and customize your browsing
-                            experience and for analytics and metrics about our visitors both on this website
-                            and other media. To find out more about .</p>
+                            We use this information in order to improve and customize our browsing
+                            experience .</p>
                         <button className='btn-slide'>
                             <Link to='/blog'>Learn More <FontAwesomeIcon icon={faArrowRight}/></Link>
                         </button>
