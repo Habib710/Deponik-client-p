@@ -14,7 +14,7 @@ const Inventories = () => {
             .then(res => res.json())
             .then(data => setitem(data))
 
-    }, [id,Item]);
+    },[id,Item]);
 
 
   
